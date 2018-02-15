@@ -1,0 +1,218 @@
+body
+{
+    margin:0;
+    padding:8px;
+}
+
+html, body, table
+{
+    color: #FFFFFF;
+    font-family: verdana;
+    font-size: 10px;
+    text-align: center;
+    background: #555555;
+}
+
+table
+{
+    background: #333333;
+    border: 1px solid white;
+    border-collapse: collapse; 
+}
+
+tr, td
+{
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+tr.boss_ready
+{
+    background-color: #1B593C;
+}
+
+tr.boss_ready_recent
+{
+    background-color: #1B893C;
+}
+
+tr.boss_almost
+{
+    background-color: #C85000;
+}
+
+tr.boss_dead
+{
+    background-color: #800000;
+}
+
+th
+{
+    border-right: 1px solid white;
+}
+
+tr.boss_ready:hover
+{
+    background-color: #3B895C;
+}
+
+tr.boss_ready_recent:hover
+{
+    background-color: #3BA95C;
+}
+
+tr.boss_almost:hover
+{
+    background-color: #E87020;
+}
+
+tr.boss_dead:hover
+{
+    background-color: #A02020;
+}
+
+tr:first-child
+{
+    border-bottom: 1px solid white;
+    background: #333333;
+}
+
+.setbutton, .loginbutton
+{
+    max-height: 17px;
+    border: 1px solid white;
+    padding: 1px 8px;
+    color: white;
+    font-size: 9px;
+    font-family: verdana, arial;
+    background-color: #333333;
+}
+
+.setbutton
+{
+    max-width: 35px;
+}
+
+.loginbutton
+{
+    width: 200px;
+}
+
+.fieldnote, .fieldtime, .fieldlogin
+{
+    margin: 0;
+    padding: 1px;
+    border: 1px solid white;
+    color: white;
+    font-size: 9px;
+    font-family: verdana, arial;
+    background-color: #333333;
+}
+
+.fieldnote
+{
+    width: 120px;
+}
+
+.fieldtime
+{
+    width: 40px;
+}
+
+.fieldlogin
+{
+    width: 140px;
+    margin: 0;
+    padding: 0;
+}
+
+.settime
+{
+    margin: 0;
+}
+
+.boss_note
+{
+    float: right;
+    padding-right: 5px;
+    color: #000080;
+    font-weight: bold;
+    cursor: help;
+}
+
+.boss_note .boss_notetext
+{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    position: absolute;
+    z-index: 1;    
+    margin-left: -76px;
+    margin-top: -25px;
+}
+
+.boss_note:hover .boss_notetext {
+    visibility: visible;
+}
+
+.boss_chance
+{
+    float: right;
+    text-align: right;
+    padding-right: 5px;
+    width: 25%;
+}
+
+a.logout:link, a.logout:visited
+{
+    text-decoration: none;
+    color: yellowgreen;
+}
+
+div.menu
+{
+    position: fixed;
+    text-align: left;
+    top: 25px;
+    font-size: 14px;
+}
+
+div.menu a, div.menu a:visited, div.menu a:hover, div.menu a:active
+{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    transition: 0.5s color ease;
+    text-decoration: none;
+    font-weight: bold;
+    color: yellowgreen;
+}
+
+div.menu a:after
+{
+    content: "";
+    transition: 0.5s all ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    height: 0.15rem;
+    width: 0;
+    background: yellowgreen;
+    bottom: -0.25em;
+    left: 0;
+}
+
+div.menu a:hover:after
+{
+    width:100%;
+}
+
+.linkwrapper
+{
+    margin: 0.5em 0;
+}

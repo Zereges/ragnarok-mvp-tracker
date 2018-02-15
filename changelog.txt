@@ -1,0 +1,7 @@
+=== 12.02.2018 ===
+	- More persistent connection
+	- More security
+	- 'Menu' on the left side with useful links
+	- Refactoring allowing easier manipulation
+	- Code cleanup and minor optimalization
+	- Comming up: Undo, Map pictures with tombs based on note, custom server restart functionality, some more refactoring to allow easier server adding/removing
