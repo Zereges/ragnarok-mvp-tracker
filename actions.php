@@ -23,7 +23,7 @@
                 $update_stmt->execute();
                 $update_stmt->close();
             }
-            log($_SESSION['id'], "SERVER_RESTART", "", 0, 0);
+            Action::log($_SESSION['id'], "SERVER_RESTART", 0, 0, "");
         }
     }
 ?>

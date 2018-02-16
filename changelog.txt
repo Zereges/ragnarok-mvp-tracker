@@ -1,4 +1,11 @@
 === 12.02.2018 ===
+	- Bitbucket repository (private)
+	- Cookie bar for eu legacy nonsense
+	- Fix restart logging
+	- Versioning
+	- Coming up: Map pictures with tombs based on note (boss death location), custom server restart 
+
+=== 12.02.2018 ===
 	- More persistent connection
 	- More security
 	- 'Menu' on the left side with useful links

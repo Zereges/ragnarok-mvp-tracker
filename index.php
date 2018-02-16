@@ -121,7 +121,7 @@
             <input name="restart_init" type="hidden" value="1">
             <input class="loginbutton" value="Server Restart" type="submit">
         </form>
-        <!-- <button class="loginbutton" onclick="if (confirm('This will undo your last boss update. Are you sure?')) undolastaction()">Undo last action</button> -->
+        <button class="loginbutton" onclick="if (confirm('This will undo your last boss update. Are you sure?')) undolastaction()">Undo my last action</button>
 <?php
         if (isset($_POST['restart_init']))
             Action::restart();
