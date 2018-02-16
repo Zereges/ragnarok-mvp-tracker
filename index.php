@@ -6,7 +6,7 @@
     require_once('actions.php');
 
     const SECRET_KEY = "<REDACTED>";
-    const VERSION = "1.1"; // Version number
+    const VERSION = "1.2"; // Version number
 
     mysqli_report(MYSQLI_REPORT_STRICT | MYSQLI_REPORT_ERROR);
 ?>
