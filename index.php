@@ -6,6 +6,7 @@
     require_once('actions.php');
 
     const SECRET_KEY = "<REDACTED>";
+    const VERSION = "1.1"; // Version number
 
     mysqli_report(MYSQLI_REPORT_STRICT | MYSQLI_REPORT_ERROR);
 ?>
@@ -16,8 +17,9 @@
         <title><?= Config::GUILD_NAME ?> - MVP Tracker - <?= Config::SERVER_NAME ?></title>
         <link rel="icon" type="image/png" href="http://www.ekirei.cz/site_icon_eki.png">
         <link rel="stylesheet" href="main.css">
-        <script src="lib/jquery-1.11.3.min.js"></script>
-        <script src="main.js"></script>
+        <script type="text/javascript" src="lib/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?forceLang=en&theme=altblack&remember=365"></script>
     </head>
     <body>
     <h1><?= Config::GUILD_NAME ?> MVP Tracker - <?= Config::SERVER_NAME ?></h1><br>
@@ -160,6 +162,6 @@
         <div class="linkwrapper"><a target="_blank" href="<?= Config::SERVER_CALC_STAT ?>">Stat Calculator</a></div>
         <div class="linkwrapper"><a target="_blank" href="<?= Config::SERVER_CALC_SKILL ?>">Skill Calculator</a></div>
     </div>
-    <div style="position: fixed; bottom: 5px; text-align: right;">©Zereges, <small>Based on Gandi's <a href="https://github.com/dangerH/RO-MVP-Timer" target="_blank">MVP Tracker</a>. <a href="changelog.txt" target="_blank">Changelog</a></small></div>
+    <div style="position: fixed; bottom: 5px; text-align: right;">©Zereges, Version <?= VERSION ?>, <a href="changelog.txt" target="_blank">Changelog</a>. <small>Based on Gandi's <a href="https://github.com/dangerH/RO-MVP-Timer" target="_blank">MVP Tracker</a>.</small></div>
   </body>
 </html>
