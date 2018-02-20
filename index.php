@@ -117,7 +117,7 @@
 ?>
         Current Time: <span id="curtime" style="visibility: hidden"><?php echo time() ?></span><br>
         Current User: <?= $_SESSION['name'] ?> <a href="logout.php" class="logout">[Logout]</a><br>
-        <form method="post" target="_self" onsubmit="return confirm('Are you sure? This will reset all timers.');">
+        <form method="post" target="_self" onsubmit="return confirm('Are you sure? This will reset all timers.');" style="display: inline;">
             <input name="restart_init" type="hidden" value="1">
             <input class="loginbutton" value="Server Restart" type="submit">
         </form>
