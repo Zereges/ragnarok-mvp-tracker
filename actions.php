@@ -25,5 +25,20 @@
             }
             Action::log($_SESSION['id'], "SERVER_RESTART", 0, 0, "");
         }
+
+        static function cache($filename, $caching_time, $data_func)
+        {
+            if (!is_dir(dirname($filename)))
+                mkdir(dirname($filename), 0700, true);
+        
+            if (!file_exists($filename) || filemtime($filename) + $caching_time < time())
+            {
+                $file = new SplFileObject($filename, 'w');
+                $data = $data_func();
+                $file->fwrite(json_encode($data));
+                return $data;
+            }
+            return json_decode(file_get_contents($filename));
+        }
     }
 ?>

@@ -18,6 +18,10 @@
 
         // Guild Info
         const GUILD_NAME = "Guild"; // Guild name
+
+        // Caching
+        const CACHING_TIME = 60 * 60 * 1; // 1 hour
+        const CACHING_DIR = 'cache/';
     }
 
     class Table

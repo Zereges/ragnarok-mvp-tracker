@@ -6,7 +6,7 @@
     require_once('actions.php');
 
     const SECRET_KEY = "<REDACTED>";
-    const VERSION = "1.2"; // Version number
+    const VERSION = "1.3"; // Version number
 
     mysqli_report(MYSQLI_REPORT_STRICT | MYSQLI_REPORT_ERROR);
 ?>
@@ -161,6 +161,8 @@
         <div class="linkwrapper"><a target="_blank" href="<?= Config::SERVER_WIKI ?>">Wikipedia</a></div>
         <div class="linkwrapper"><a target="_blank" href="<?= Config::SERVER_CALC_STAT ?>">Stat Calculator</a></div>
         <div class="linkwrapper"><a target="_blank" href="<?= Config::SERVER_CALC_SKILL ?>">Skill Calculator</a></div>
+        <br>
+        <div class="linkwrapper"><a target="_blank" href="stats/user.php">User trivia</a><div>
     </div>
     <div style="position: fixed; bottom: 5px; text-align: right;">©Zereges, Version <?= VERSION ?>, <a href="changelog.txt" target="_blank">Changelog</a>. <small>Based on Gandi's <a href="https://github.com/dangerH/RO-MVP-Timer" target="_blank">MVP Tracker</a>.</small></div>
   </body>

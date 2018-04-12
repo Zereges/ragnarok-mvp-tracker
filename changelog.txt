@@ -1,4 +1,12 @@
-=== 12.02.2018 ===
+=== 12.04.2018 ===
+    - User trivia (stats).
+    - Caching mechanism.
+    - Cominug up: 
+      - Global stats with nice charts.
+      - Map pictures with tombs based on note.
+      - Custom server restart functionality.
+
+=== 16.02.2018 ===
 	- Bitbucket repository (private)
 	- Cookie bar for eu legacy nonsense
 	- Fix restart logging
