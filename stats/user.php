@@ -108,7 +108,7 @@
     }
     
 
-    $data = Action::cache(Config::CACHING_DIR . "user_" . $_SESSION['id'], 0, function()
+    $data = Action::cache(Config::CACHING_DIR . "user_" . $_SESSION['id'], Config::CACHING_TIME, function()
     {
         return get_user_stats($_SESSION['id']);
     });
