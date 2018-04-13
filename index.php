@@ -164,6 +164,6 @@
         <br>
         <div class="linkwrapper"><a target="_blank" href="stats/user.php">User trivia</a><div>
     </div>
-    <div style="position: fixed; bottom: 5px; text-align: right;">©Zereges, Version <?= VERSION ?>, <a href="changelog.txt" target="_blank">Changelog</a>. <small>Based on Gandi's <a href="https://github.com/dangerH/RO-MVP-Timer" target="_blank">MVP Tracker</a>.</small></div>
+    <div style="position: fixed; bottom: 5px; text-align: right; font-size: 0.8em;">©Zereges, Version <?= VERSION ?>, <a href="changelog.txt" target="_blank">Changelog</a>. <small>Based on Gandi's <a href="https://github.com/dangerH/RO-MVP-Timer" target="_blank">MVP Tracker</a>.</small></div>
   </body>
 </html>

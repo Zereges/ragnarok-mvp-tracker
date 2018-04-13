@@ -38,7 +38,7 @@
                 $file->fwrite(json_encode($data));
                 return $data;
             }
-            return json_decode(file_get_contents($filename));
+            return json_decode(file_get_contents($filename), true);
         }
     }
 ?>
