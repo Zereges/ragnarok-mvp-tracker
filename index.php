@@ -15,7 +15,7 @@
         <meta charset="UTF-8">
         <meta author="Zereges">
         <title><?= Config::GUILD_NAME ?> - MVP Tracker - <?= Config::SERVER_NAME ?></title>
-        <link rel="icon" type="image/png" href="http://www.ekirei.cz/site_icon_eki.png">
+        <link rel="icon" type="image/png" href="https://www.ekirei.cz/site_icon_eki.png">
         <link rel="stylesheet" href="main.css">
         <script type="text/javascript" src="lib/jquery-1.11.3.min.js"></script>
         <script type="text/javascript" src="main.js"></script>
