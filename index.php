@@ -132,16 +132,17 @@
             $interval_desc = $type == 4 ? "hrs" : "min";
             $interval_dur = $type == 4 ? 60 * 60 : 60;
 
-            if ($stmt = $connection->prepare("SELECT id, boss_name, min_time, min_time + max_time, map FROM ".Table::BOSSES." WHERE type = $type ORDER BY $order_type"))
+            if ($stmt = $connection->prepare("SELECT id, boss_name, min_time, min_time + max_time, map, monster_id FROM ".Table::BOSSES." WHERE type = $type ORDER BY $order_type"))
             {
                 $stmt->execute();
-                $stmt->bind_result($id, $boss_name, $min_time, $max_time, $map);
+                $stmt->bind_result($id, $boss_name, $min_time, $max_time, $map, $monster_id);
                 echo "<h2>$desc</h2>";
                 echo "<table align=\"center\">";
                 echo "<tr><th width=\"200\">Name</th><th width=\"100\">Map</th><th width=\"220\">Spawntime</th><th width=\"100\">Last update</th><th>Note &amp; Time</th><th width=\"100\">Interval</th></tr>";
                 while ($stmt->fetch())
                 {
-                    $boss_name = "<b>$boss_name</b>" . "<span class=\"boss_note\" style=\"visibility: hidden\">[note]<span class=\"boss_notetext\"></span></span>";
+                    $dbclink = Config::SERVER_DB_MONSTER . $monster_id;
+                    $boss_name = "<b><a href=\"$dbclink\" target=\"_blank\">$boss_name</a></b>" . "<span class=\"boss_note\" style=\"visibility: hidden\">[note]<span class=\"boss_notetext\"></span></span>";
                     $interval = "" . intval($min_time / $interval_dur) . "~" . intval($max_time / $interval_dur) . " $interval_desc";
                     $note_input = "<input class=\"fieldnote\" name=\"note\" maxlength=\"80\" type=\"text\" onkeypress=\"if (event.keyCode == 13) post_update('update_$id') \">";
                     $time_input = "<input class=\"fieldtime\" name=\"time\" maxlength=\"8\" type=\"text\" onkeypress=\"if (event.keyCode == 13) post_update('update_$id') \">";

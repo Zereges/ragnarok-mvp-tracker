@@ -15,6 +15,7 @@
         const SERVER_WIKI = 'https://irowiki.org/classic/'; // Link to the wiki to use
         const SERVER_CALC_STAT = 'https://rocalc.com/'; // Link to the stat calculator
         const SERVER_CALC_SKILL = 'http://irowiki.org/~himeyasha/skill4/'; // Link to the skill calculator
+        const SERVER_DB_MONSTER = Config::SERVER_DB . '?monster='; // Link to the database to use
 
         // Guild Info
         const GUILD_NAME = "Guild"; // Guild name

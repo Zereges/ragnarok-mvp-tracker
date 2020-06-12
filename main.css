@@ -216,3 +216,9 @@ div.menu a:hover:after
 {
     margin: 0.5em 0;
 }
+
+tr td a
+{
+    color: inherit;
+    text-decoration: none;
+}
